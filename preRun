@@ -1,0 +1,31 @@
+#!/bin/bash
+
+make
+
+gcc -c rq0.c
+gcc -o rq0 rq0.o
+
+gcc -c rq1.c
+gcc -o rq1 rq1.o
+
+gcc -c rq2.c
+gcc -o rq2 rq2.o
+
+gcc -c rq3.c
+gcc -o rq3 rq3.o
+
+gcc -c addor.c
+gcc -o addor addor.o
+
+gcc -c substractor.c
+gcc -o substractor substractor.o
+
+gcc -c mul.c
+gcc -o mul mul.o
+
+gcc -c div.c
+gcc -o div div.o
+
+chmod +x clients
+
+rm *.o
